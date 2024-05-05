@@ -65,7 +65,39 @@ switch (fruta){   // dentro da condição do switch case, posso colocar numeros
 
 // *************************************************
 //************************************************* */
+// Laços de Repetição
+// FOR
+console.log("----Laço de repetição : FOR")
 
+for (let contador=0;contador<4;contador++){
+    console.log(contador)
+    console.log("Aumentar o contador")
+}
+
+let pontosVida=0
+for(let i=0;i<11;i++){
+    pontosVida +=1
+    console.log("Tomou uma bebida que deu força " + i)
+}
+console.log (pontosVida + "Totais")
+
+//********************************************* */
+// Laço de Repetição "WHILE"
+let contador=0
+while(contador<3){
+    console.log("olá")
+    contador++
+}
+
+//************************************************ */
+// DO WHILE   (faça enquanto)
+let contador1=0
+do{
+    console.log("Olá Laço DO WHILE")
+    contador1 ++
+} while(contador1<3)
+
+//************************************************ */
 
 
 
