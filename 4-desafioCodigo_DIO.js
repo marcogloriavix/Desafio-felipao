@@ -33,3 +33,42 @@ if (item && item.quantidade >= quantidade) {
 }
 
 //***************************************************************** */
+
+//let saldoInicial = 100
+//let resultadoUltimoRound = "perdeu"
+//let custoItem = 10
+
+
+function decidirCompraOuEconomizar(saldoInicial, resultadoUltimoRound, custoItem) {
+    let novoSaldo;
+    let resultado;
+
+    // TODO: Implemente a lógica para ajustar o saldo de acordo com o resultado do último round
+    if (resultadoUltimoRound == "ganhou") {
+        novoSaldo = saldoInicial * 0.15;
+    } else if (resultadoUltimoRound =="perdeu"){
+        novoSaldo = saldoInicial * 0.05;
+    }
+    else if (resultadoUltimoRound =="bônus"){
+        novoSaldo = saldoInicial * 0.20;
+    }
+		// Utilizamos a função JavaScript Math.round() para arredondar um número para o inteiro mais próximo.
+	    novoSaldo = Math.round(novoSaldo);
+		
+
+    // TODO: Implemente a lógica para verificar se o saldo é suficiente para comprar o item
+    if (custoItem < novoSaldo) {
+          resultado = "Comprar";
+    } else {
+             resultado = "Economizar";
+    }
+    return resultado
+}
+
+// TODO: Chame a função para imprimir o resultado
+    console.log(decidirCompraOuEconomizar(100, "bônus", 10))
+
+
+    //***************************************************************** */
+
+    
