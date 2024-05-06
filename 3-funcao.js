@@ -23,11 +23,23 @@ console.log("teste")
 // Itemtação é importante para o codigo ficar mais fácil de ler
 
 function principal(){
-    get data()
-    get check()
-    get send()
+    data()
+    check()
+    send()
 }
 
+principal()  // ATENÇÂO  - CHAMAR A FUNÇÃO
+
 function data(){
-    
+    console.log("pegando dados")
 }
+
+function check(){
+    console.log("validando dados")
+}
+
+function send(){
+    console.log("cadastrando dados")
+}
+
+//********************************************************* */
